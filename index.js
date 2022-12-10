@@ -75,7 +75,7 @@ function animate() {
   drawPoint(pointToDraw.x, pointToDraw.y);
   randomInitialPoint = pointToDraw;
   points++;
-  if (points < 100000) {
+  if (points < maxNumberOfPoints) {
     reqAnim = window.requestAnimationFrame(animate);
   }
 }
